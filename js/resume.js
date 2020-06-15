@@ -27,7 +27,7 @@ am4core.ready(function() {
         "color": colorSet.getIndex(5),
         "task": "Left: Cape Verde Islands",
         "disabled2":false,
-        "image2":"/img/cv.png",
+        "image2":"./img/cv.png",
         "location":0
     },{
         "category": "Immigration",
@@ -36,7 +36,7 @@ am4core.ready(function() {
         "color": colorSet.getIndex(5),
         "task": "Arrive: United States",
         "disabled2":false,
-        "image2":"/img/us.jpg",
+        "image2":"./img/us.jpg",
         "location":0
     },{
         "category": "Job",
@@ -45,7 +45,7 @@ am4core.ready(function() {
         "color": colorSet.getIndex(5),
         "task": "Tenure at The Hartford",
         "disabled2":false,
-        "image2":"/img/the_hartford.png",
+        "image2":"./img/the_hartford.png",
         "location":0
     }, {
         "category": "Job",
@@ -54,7 +54,7 @@ am4core.ready(function() {
         "color": colorSet.getIndex(0),
         "task": "Tenure at Pratt",
         "disabled2":false,
-        "image2":"/img/pratt.png",
+        "image2":"./img/pratt.png",
         "location":0
     }, {
         "category": "Job",
@@ -63,7 +63,7 @@ am4core.ready(function() {
         "color": colorSet.getIndex(0),
         "task": "Factory Job",
         "disabled2":false,
-        "image2":"/img/2000.png",
+        "image2":"./img/2000.png",
         "location":0
     },{
         "category": "Studies",
@@ -72,7 +72,7 @@ am4core.ready(function() {
         "color": colorSet.getIndex(1),
         "task": "BS in Math",
         "disabled2":false,
-        "image2":"/img/umd.jpg",
+        "image2":"./img/umd.jpg",
         "location":0
     }, {
         "category": "Studies",
@@ -81,7 +81,7 @@ am4core.ready(function() {
         "color": colorSet.getIndex(8),
         "task": "Masters in Data Science",
         "disabled2":false,
-        "image2":"/img/northwestern.png",
+        "image2":"./img/northwestern.png",
         "location":0
     }, {
         "category": "Studies",
@@ -90,7 +90,7 @@ am4core.ready(function() {
         "color": colorSet.getIndex(9),
         "task": "High School",
         "disabled2":false,
-        "image2":"/img/bhs.png",
+        "image2":"./img/bhs.png",
         "location":0
     }];
     
