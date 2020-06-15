@@ -180,12 +180,12 @@ nav.navbar a.nav-link.active, nav.navbar a.nav-link:hover {
 *
 */
 .intro-section {
-  padding-top: 10px;
+  padding-top: 150px;
   color: #fff;
 }
 
 .intro-section .logo, .intro-section p {
-  margin-bottom: 10px;
+  margin-bottom: 120px;
 }
 
 @media (min-width: 992px) {

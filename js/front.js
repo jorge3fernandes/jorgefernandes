@@ -155,7 +155,8 @@ $(function () {
                 slider.owlCarousel({
                     nav: false,
                     dots: true,
-                    items: 1
+                    items: 1,
+                    autoWidth: true
                 });
 
             }

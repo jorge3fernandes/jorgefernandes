@@ -96,7 +96,7 @@ am4core.ready(function() {
     
     chart.dateFormatter.dateFormat = "yyyy/MM";
     chart.dateFormatter.inputDateFormat = "yyyy/MM";
-    chart.fontSize = 11;
+    chart.fontSize = 15;
     
     var categoryAxis = chart.yAxes.push(new am4charts.CategoryAxis());
     categoryAxis.dataFields.category = "category";
@@ -137,7 +137,7 @@ am4core.ready(function() {
     series.columns.template.strokeOpacity = 0;
     
     var bullet = series.bullets.push(new am4charts.CircleBullet());
-    bullet.circle.radius = 3;
+    bullet.circle.radius = 5;
     bullet.circle.strokeOpacity = 0;
     bullet.propertyFields.fill = "color";
     bullet.locationX = 0;
@@ -176,12 +176,12 @@ am4core.ready(function() {
     eventSeries.dataFields.categoryY = "category";
     eventSeries.data = [
         { category: "Job", eventDate: "2014-06", letter: "I", description: "Hired as Interned" },
-        { category: "Job", eventDate: "2014-08", letter: "F", description: "Accepted a Full Time offer: Data Specialist" },
+        { category: "Job", eventDate: "2014-09", letter: "F", description: "Accepted a Full Time offer: Data Specialist" },
         { category: "Job", eventDate: "2016-06", letter: "F", description: "Hired as Senior Data Anayst" },
         { category: "Job", eventDate: "2018-03", letter: "P", description: "Promoted To Data Scientist" },
         { category: "Job", eventDate: "2018-12", letter: "P", description: "Promoted to Sr. Data Scientist" },
        ];
-    eventSeries.strokeOpacity = 6;
+    eventSeries.strokeOpacity = 0;
     
     var flagBullet = eventSeries.bullets.push(new am4plugins_bullets.FlagBullet())
     flagBullet.label.propertyFields.text = "letter";
@@ -190,7 +190,7 @@ am4core.ready(function() {
     
     chart.scrollbarX = new am4core.Scrollbar();
     chart.scrollbarX.align = "center"
-    chart.scrollbarX.width = am4core.percent(85);
+    chart.scrollbarX.width = am4core.percent(80);
     
     var cursor = new am4plugins_timeline.CurveCursor();
     chart.cursor = cursor;
@@ -198,7 +198,7 @@ am4core.ready(function() {
     cursor.yAxis = categoryAxis;
     cursor.lineY.disabled = true;
     cursor.lineX.strokeDasharray = "1,4";
-    cursor.lineX.strokeOpacity = 1;
+    cursor.lineX.strokeOpacity = 0.1;
     
     dateAxis.renderer.tooltipLocation2 = 0;
     categoryAxis.cursorTooltipEnabled = false;
