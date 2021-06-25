@@ -1,3 +1,10 @@
+var today = new Date();
+var currentYear = today.getFullYear();
+var currentMonth = today.getMonth() + 1;
+var currentYearMonth = currentYear+"/0"+currentMonth
+
+console.log(currentYearMonth)
+
 am4core.ready(function() {
 
     // Themes begin
@@ -12,10 +19,10 @@ am4core.ready(function() {
     chart.yAxisInnerRadius = am4core.percent(-25);
     chart.maskBullets = false;
 
-    var title = chart.titles.create();
-            title.text = "My Resume";
-            title.fontSize = 25;    
-            title.marginBottom = 30;
+    // var title = chart.titles.create();
+    //         title.text = "My Resume";
+    //         title.fontSize = 25;    
+    //         title.marginBottom = 30;
     
     var colorSet = new am4core.ColorSet();
     colorSet.saturation = 0.5;
@@ -27,16 +34,16 @@ am4core.ready(function() {
         "color": colorSet.getIndex(5),
         "task": "Left: Cape Verde Islands",
         "disabled2":false,
-        "image2":"./img/cv.png",
+        "image2":"./img/misc/cv.png",
         "location":0
     },{
         "category": "Immigration",
-        "start": "2007/04",
+        "start": "2007/03",
         "end": "2007/04",
         "color": colorSet.getIndex(5),
-        "task": "Arrive: United States",
+        "task": "Immigrated from Cape Verde to United States",
         "disabled2":false,
-        "image2":"./img/us.jpg",
+        "image2":"./img/misc/us.jpg",
         "location":0
     },{
         "category": "Job",
@@ -45,25 +52,25 @@ am4core.ready(function() {
         "color": colorSet.getIndex(5),
         "task": "Tenure at The Hartford",
         "disabled2":false,
-        "image2":"./img/the_hartford.png",
+        "image2":"./img/companies/the_hartford.png",
         "location":0
     }, {
         "category": "Job",
         "start": "2016/06",
-        "end": "2020/06",
+        "end": currentYearMonth,
         "color": colorSet.getIndex(0),
         "task": "Tenure at Pratt",
         "disabled2":false,
-        "image2":"./img/pratt.png",
+        "image2":"./img/companies/pratt.png",
         "location":0
     }, {
         "category": "Job",
         "start": "2009/06",
         "end": "2009/09",
         "color": colorSet.getIndex(0),
-        "task": "Factory Job",
+        "task": "Factory Job - Employment 2000 inc.",
         "disabled2":false,
-        "image2":"./img/2000.png",
+        "image2":"./img/companies/emp2000.jpeg",
         "location":0
     },{
         "category": "Studies",
@@ -72,7 +79,7 @@ am4core.ready(function() {
         "color": colorSet.getIndex(1),
         "task": "BS in Math",
         "disabled2":false,
-        "image2":"./img/umd.jpg",
+        "image2":"./img/school/umd.jpg",
         "location":0
     }, {
         "category": "Studies",
@@ -81,7 +88,7 @@ am4core.ready(function() {
         "color": colorSet.getIndex(8),
         "task": "Masters in Data Science",
         "disabled2":false,
-        "image2":"./img/northwestern.png",
+        "image2":"./img/school/northwestern.png",
         "location":0
     }, {
         "category": "Studies",
@@ -90,7 +97,7 @@ am4core.ready(function() {
         "color": colorSet.getIndex(9),
         "task": "High School",
         "disabled2":false,
-        "image2":"./img/bhs.png",
+        "image2":"./img/school/bhs.png",
         "location":0
     }];
     
@@ -176,10 +183,14 @@ am4core.ready(function() {
     eventSeries.dataFields.categoryY = "category";
     eventSeries.data = [
         { category: "Job", eventDate: "2014-06", letter: "I", description: "Hired as Interned" },
-        { category: "Job", eventDate: "2014-09", letter: "F", description: "Accepted a Full Time offer: Data Specialist" },
-        { category: "Job", eventDate: "2016-06", letter: "F", description: "Hired as Senior Data Anayst" },
+        { category: "Job", eventDate: "2014-09", letter: "H", description: "Accepted a Full Time offer: Data Specialist" },
+        { category: "Job", eventDate: "2016-06", letter: "H", description: "Hired as Senior Data Anayst" },
         { category: "Job", eventDate: "2018-03", letter: "P", description: "Promoted To Data Scientist" },
         { category: "Job", eventDate: "2018-12", letter: "P", description: "Promoted to Sr. Data Scientist" },
+        { category: "Job", eventDate: "2020-10", letter: "P", description: "Became a Product Owner"},
+        { category: "Job", eventDate: "2021-03", letter: "I", description: "Deployed First Full Stack Django ML App(Self Thought)."},
+        { category: "Job", eventDate: "2021-05", letter: "P", description: "Leading RPA and Intelligent Automation"},
+        { category: "Job", eventDate: "2021-06", letter: "P", description: "Introduced UltraLearning Self and Loving It."}
        ];
     eventSeries.strokeOpacity = 0;
     

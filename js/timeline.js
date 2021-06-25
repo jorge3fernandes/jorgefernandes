@@ -25,10 +25,10 @@ am4core.ready(function() {
         chart.curveContainer.padding(100, 20, 50, 20);
         chart.maskBullets = false;
 
-        var title = chart.titles.create();
-            title.text = "A Typical Day For Jorge";
-            title.fontSize = 25;
-            title.marginBottom = 30;
+        // var title = chart.titles.create();
+        //     title.text = "A Typical Day For Jorge";
+        //     title.fontSize = 25;
+        //     title.marginBottom = 30;
     
     
         var colorSet = new am4core.ColorSet();
@@ -37,14 +37,14 @@ am4core.ready(function() {
         chart.dateFormatter.dateFormat = "HH";
     
         chart.data = [{
-            "category": "",
+            "category": "s",
             "start": "2019-01-10 05:00",
             "end": "2019-01-10 05:15",
             "color": colorSet.getIndex(15),
             "icon": alarm,
             "text": "Wake up!"
         }, {
-            "category": "",
+            "category": "m",
             "start": "2019-01-10 05:15",
             "end": "2019-01-10 06:00",
             "color": colorSet.getIndex(14),
@@ -52,7 +52,7 @@ am4core.ready(function() {
             "text": "Read and Meditate!"
         },
         {
-            "category": "",
+            "category": "m",
             "start": "2019-01-10 06:00",
             "end": "2019-01-10 06:45",
             "color": colorSet.getIndex(13),
@@ -60,25 +60,17 @@ am4core.ready(function() {
             "text": "Quick Exercise"
         },
         {
-            "category": "",
-            "start": "2019-01-10 07:00",
-            "end": "2019-01-10 07:30",
-            "color": colorSet.getIndex(12),
-            "icon": breakfast,
-            "text": "Have breakfast"
-        },
-        {
-            "category": "",
-            "start": "2019-01-10 07:30",
+            "category": "l",
+            "start": "2019-01-10 06:15",
             "end": "2019-01-10 08:00",
             "color": colorSet.getIndex(11),
-            "icon": car,
-            "text": "Drive to work"
+            "icon": book,
+            "text": "UltraLearning Project"
         },
         {
-            "category": "",
+            "category": "w",
             "start": "2019-01-10 08:00",
-            "end": "2019-01-10 17:00",
+            "end": "2019-01-10 16:00",
             "color": colorSet.getIndex(10),
             "icon": work,
             "text": "Work"
@@ -108,23 +100,23 @@ am4core.ready(function() {
             "text": "Tea"
         },
         {
-            "category": "",
+            "category": "f",
             "start": "2019-01-10 16:00",
             "end": "2019-01-10 16:50",
             "color": colorSet.getIndex(8),
             "icon": car,
-            "text": "Drive home"
+            "text": "Sometime: Relaxing Drive"
         },
         {
-            "category": "",
+            "category": "f",
             "start": "2019-01-10 17:00",
             "end": "2019-01-10 21:00",
             "color": colorSet.getIndex(7),
             "icon": home,
-            "text": "Home! Relax and Enjoy the family :)"
+            "text": "Home! Relax and Enjoy the Family :)"
         },
         {
-            "category": "e",
+            "category": "l",
             "start": "2019-01-10 21:00",
             "end": "2019-01-10 22:30",
             "color": colorSet.getIndex(7),
@@ -132,7 +124,7 @@ am4core.ready(function() {
             "text": "Read a bit"
         },
         {
-            "category": "",
+            "category": "s",
             "start": "2019-01-10 22:00",
             "end": "2019-01-11 05:00",
             "color": colorSet.getIndex(1),
